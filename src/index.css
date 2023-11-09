@@ -25,3 +25,14 @@ p {
 main {
   padding: 5rem 16.18034%;
 }
+
+.kitten {
+  width: 200px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .kitten {
+    display: block;
+  }
+}
