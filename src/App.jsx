@@ -47,7 +47,7 @@ export const App = () => {
           i&nbsp;have 6+&nbsp;years of&nbsp;experience in&nbsp;web engineering.
         </p>
         <p>
-          i&nbsp;can do&nbsp;frontend, backend, web3, 3d , mobile apps and
+          i&nbsp;can do&nbsp;frontend, backend, web3, 3d, mobile apps and
           everything else js&nbsp;can&nbsp;do.
         </p>
         <div>
