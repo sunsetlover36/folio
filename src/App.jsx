@@ -41,30 +41,50 @@ export const App = () => {
 
   return (
     <main>
-      <p>hi, i&rsquo;m ruburi.</p>
-      <p>
-        i&nbsp;have 6+&nbsp;years of&nbsp;experience in&nbsp;web engineering.
-      </p>
-      <p>
-        i&nbsp;can do&nbsp;frontend, backend, web3, 3d&nbsp;and mobile apps.
-      </p>
       <div>
-        <a href="https://t.me/rubyuroboros">telegram</a>
-      </div>
+        <p>hi, i&rsquo;m ruburi.</p>
+        <p>
+          i&nbsp;have 6+&nbsp;years of&nbsp;experience in&nbsp;web engineering.
+        </p>
+        <p>
+          i&nbsp;can do&nbsp;frontend, backend, web3, 3d , mobile apps and
+          everything else js&nbsp;can&nbsp;do.
+        </p>
+        <div>
+          <a href="https://t.me/rubyuroboros">telegram</a>
+        </div>
 
+        <div>
+          <img
+            src="/kitten.png"
+            className="kitten"
+            title="pet the kitten?"
+            onClick={incrementClicksCount}
+          />
+          {pettingCount !== null && (
+            <>
+              the kitten was petted {pettingCount}{' '}
+              {pettingCount === 1 ? 'time' : 'times'}.
+            </>
+          )}
+        </div>
+      </div>
       <div>
-        <img
-          src="/kitten.png"
-          className="kitten"
-          title="pet the kitten?"
-          onClick={incrementClicksCount}
-        />
-        {pettingCount !== null && (
-          <>
-            the kitten was petted {pettingCount}{' '}
-            {pettingCount === 1 ? 'time' : 'times'}.
-          </>
-        )}
+        <h4>my projects</h4>
+        <ul>
+          <li>
+            <strong>autonode</strong> &mdash; my&nbsp;first pet project that
+            made it&nbsp;to&nbsp;a&nbsp;beta release. its main function
+            is&nbsp;to&nbsp;assist crypto node operators in&nbsp;managing their
+            nodes and to&nbsp;automate all operations related to&nbsp;them with
+            ease.
+            <br />
+            <br />
+            the project was sold, and i&nbsp;continued its development not
+            so&nbsp;long ago.&nbsp;i&nbsp;will publish a&nbsp;link to&nbsp;the
+            project in&nbsp;the near future.
+          </li>
+        </ul>
       </div>
     </main>
   );

@@ -12,6 +12,15 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 html,
 body {
   margin: 0;
@@ -24,6 +33,16 @@ p {
 
 main {
   padding: 5rem 16.18034%;
+  display: flex;
+}
+main > div:first-child {
+  margin-right: 6.18034%;
+}
+main > div:first-child > p:first-child {
+  margin: 0;
+}
+main > div:last-child {
+  max-width: 50%;
 }
 
 .kitten {
@@ -31,7 +50,7 @@ main {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1400px) {
   .kitten {
     display: block;
   }
