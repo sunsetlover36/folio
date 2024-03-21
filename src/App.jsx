@@ -42,7 +42,9 @@ export const App = () => {
   return (
     <main>
       <div>
-        <p>hi, i&rsquo;m ruburi.</p>
+        <p>
+          hi, i&rsquo;m <strong style={{ fontSize: '2rem' }}>ruburi</strong>.
+        </p>
         <p>
           i&nbsp;have 6+&nbsp;years of&nbsp;experience in&nbsp;web engineering.
         </p>
@@ -55,23 +57,30 @@ export const App = () => {
         </div>
 
         <div>
+          <div>
+            <img
+              src="/kitten.png"
+              className="kitten"
+              title="pet the kitten?"
+              onClick={incrementClicksCount}
+            />
+            {pettingCount !== null && (
+              <>
+                the kitten was petted {pettingCount}{' '}
+                {pettingCount === 1 ? 'time' : 'times'}.
+              </>
+            )}
+          </div>
           <img
-            src="/kitten.png"
-            className="kitten"
-            title="pet the kitten?"
-            onClick={incrementClicksCount}
+            src="/kitten-attacking.png"
+            title="attacking kitten!!!"
+            className="kitten-attacking"
           />
-          {pettingCount !== null && (
-            <>
-              the kitten was petted {pettingCount}{' '}
-              {pettingCount === 1 ? 'time' : 'times'}.
-            </>
-          )}
         </div>
       </div>
       <div>
         <h4>my projects</h4>
-        <ul>
+        <ol>
           <li>
             <strong>autonode</strong> &mdash; my&nbsp;first pet project that
             made it&nbsp;to&nbsp;a&nbsp;beta release. its main function
@@ -84,7 +93,11 @@ export const App = () => {
             so&nbsp;long ago.&nbsp;i&nbsp;will publish a&nbsp;link to&nbsp;the
             project in&nbsp;the near future.
           </li>
-        </ul>
+          <li>
+            <strong>?</strong> &mdash; new and cool web3&nbsp;project, details
+            coming soon.
+          </li>
+        </ol>
       </div>
     </main>
   );

@@ -25,15 +25,28 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 1.25rem;
 }
 
 p {
   margin: 1rem 0;
 }
 
+ol {
+  list-style-type: lower-greek;
+}
+ol li {
+  margin-bottom: 2rem;
+}
+ol li:last-child {
+  margin-bottom: 0;
+}
+
 main {
-  padding: 5rem 16.18034%;
+  padding: 5rem 6.18034%;
   display: flex;
+  flex-wrap: wrap;
 }
 main > div:first-child {
   margin-right: 6.18034%;
@@ -49,9 +62,41 @@ main > div:last-child {
   width: 200px;
   cursor: pointer;
 }
+.kitten-attacking {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  left: -10vw;
+  width: 30vw;
+  transition: all 15s ease;
+  cursor: help;
+}
+.kitten-attacking:hover {
+  transform: rotate(90deg) scale(2);
+  left: 0;
+  top: 37.5%;
+}
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 800px) {
+  main {
+    padding: 3rem 3.82034%;
+  }
   .kitten {
     display: block;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+  main > div:last-child {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  main {
+    padding: 5rem 16.18034%;
   }
 }
