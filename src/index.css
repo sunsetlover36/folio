@@ -66,9 +66,9 @@ main > div:last-child {
   transform: rotate(90deg);
   position: absolute;
   top: 50%;
-  left: -10vw;
-  width: 30vw;
-  transition: all 15s ease;
+  left: -7.5vw;
+  width: 25vw;
+  transition: all 1s ease;
   cursor: help;
 }
 .kitten-attacking:hover {
